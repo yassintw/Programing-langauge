@@ -1,0 +1,23 @@
+% ---------------------------------
+% Problem Set 1, Question 1, Part C
+% ---------------------------------
+%
+% Author: YOUR NAME HERE
+% Collaborators: 
+
+function [animals] = findAnimals(featureNames, names, features, data)
+
+featureNames = cellstr(featureNames);
+
+% Do not edit above this line!
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%
+% YOUR CODE HERE (replace the [] with your answer, and note that
+% you may need more than one line of code!)
+featureNames= feature
+animals = [data(:,find(strcmp(features,names)))'];
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Do not edit below this line!
+
+end

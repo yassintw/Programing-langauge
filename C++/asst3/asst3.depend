@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1413184795 source:c:\users\yam\desktop\asst3\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
