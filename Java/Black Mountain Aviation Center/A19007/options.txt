@@ -1,0 +1,14 @@
+-notree
+-noindex
+-nohelp 
+-nodeprecatedlist 
+-author 
+-version
+-linksource
+-tag prgm.usage
+-tag assignment.number
+-doctitle 'CISC 190 Documentation' 
+-windowtitle 'JavaDoc Demo Program for Week 07' 
+-header 'Program by<br>Yassin<br>Yazal\'s CISC190 Java A19007'
+-footer 'Spring 2011 - CISC 190<br>San Diego Miramar College<br>10440 Black Mtn Road<br>San Diego, CA 92126' 
+-bottom 'Copyright 2011 by Yassin Yazal, Email: <a href= "mailto:yassintw@gmail.com"> yassintw@gmail.com</a>'

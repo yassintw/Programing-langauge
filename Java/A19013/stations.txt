@@ -1,0 +1,23 @@
+AST Astoria Regional Airport Astoria     OR 
+BIH Bishop Airport           Bishop      CA 
+BLH Blythe Airport           Blythe      CA 
+CRQ Mccellan/palomar Airport Carlsbad    CA 
+FOT Fohnerville Airport      Fortuna     CA 
+FAT Fresno Yosemite Intl     Fresno      CA 
+IMB Kimberly Station         Kimberly    OR 
+LKV Lake County Airport      Lakeview    OR 
+WJF General Wm J Fox Airfiel Lancaster   CA 
+SIY Siskiyou County Airport  Montague    CA 
+OTH North Bend Muni Airport  North Bend  OR 
+ONT Ontario Intl Airport     Ontario     CA 
+PDX Portland Intl Airport    Portland    OR 
+RNM Ramona Airport           Ramona      CA 
+RBL Red Bluff Muni Airport   Red Bluff   CA 
+RDM Roberts Field Airport    Redmond     OR 
+SAC Sacramento Executive Air Sacramento  CA 
+SAN San Diego Intl Lindbergh San Diego   CA 
+SFO San Francisco Internatio San Francis CA 
+SBA Santa Barbara Muni Airpo Santa Barba CA 
+SEA Seattle Tacoma Intl Airp Seattle     WA 
+GEG Spokane Intl Airport     Spokane     WA 
+YKM Yakima Air Terminal Mcal Yakima      WA 

@@ -1,0 +1,881 @@
+Weather Report Weather Report VALID 161800Z FOR USE 1400-2100Z. TEMPS NEG ABV 24000
+== Station ID: ABI
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +09
+== Station ID: ABQ
+Altitude Weather for 12000 feet
+Dir 020 degrees
+Spped 13
+Temp +12
+== Station ID: ABR
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 49
+Temp -02
+== Station ID: ACK
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 25
+Temp +02
+== Station ID: ACY
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 36
+Temp +03
+== Station ID: AGC
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 37
+Temp +03
+== Station ID: ALB
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 30
+Temp +02
+== Station ID: ALS
+Altitude Weather for 12000 feet
+Dir 350 degrees
+Spped 11
+Temp +12
+== Station ID: AMA
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 10
+Temp +09
+== Station ID: AST
+Altitude Weather for 12000 feet
+Dir 200 degrees
+Spped 14
+Temp +02
+== Station ID: ATL
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 16
+Temp +06
+== Station ID: AVP
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 28
+Temp +04
+== Station ID: AXN
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 42
+Temp -03
+== Station ID: BAM
+Altitude Weather for 12000 feet
+Dir 210 degrees
+Spped 07
+Temp +10
+== Station ID: BCE
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +12
+== Station ID: BDL
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 29
+Temp +01
+== Station ID: BFF
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 28
+Temp +06
+== Station ID: BGR
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 27
+Temp +00
+== Station ID: BHM
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 19
+Temp +07
+== Station ID: BIH
+Altitude Weather for 12000 feet
+Dir 160 degrees
+Spped 06
+Temp +11
+== Station ID: BIL
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 19
+Temp +03
+== Station ID: BLH
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +10
+== Station ID: BML
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 26
+Temp +00
+== Station ID: BNA
+Altitude Weather for 12000 feet
+Dir 230 degrees
+Spped 07
+Temp +07
+== Station ID: BOI
+Altitude Weather for 12000 feet
+Dir 230 degrees
+Spped 09
+Temp +08
+== Station ID: BOS
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 27
+Temp +01
+== Station ID: BRL
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 22
+Temp +01
+== Station ID: BRO
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +07
+== Station ID: BUF
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 31
+Temp +01
+== Station ID: CAE
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 20
+Temp +05
+== Station ID: CAR
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 24
+Temp -02
+== Station ID: CGI
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 08
+Temp +05
+== Station ID: CHS
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 12
+Temp +06
+== Station ID: CLE
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 34
+Temp +02
+== Station ID: CLL
+Altitude Weather for 12000 feet
+Dir 070 degrees
+Spped 16
+Temp +08
+== Station ID: CMH
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 42
+Temp +03
+== Station ID: COU
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 31
+Temp +04
+== Station ID: CRP
+Altitude Weather for 12000 feet
+Dir 030 degrees
+Spped 13
+Temp +08
+== Station ID: CRW
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 36
+Temp +05
+== Station ID: CSG
+Altitude Weather for 12000 feet
+Dir 250 degrees
+Spped 10
+Temp +07
+== Station ID: CVG
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 32
+Temp +04
+== Station ID: CZI
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 21
+Temp +06
+== Station ID: DAL
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +08
+== Station ID: DBQ
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 43
+Temp +00
+== Station ID: DEN
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 15
+Temp +09
+== Station ID: DIK
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 38
+Temp -02
+== Station ID: DLH
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 36
+Temp -05
+== Station ID: DLN
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 16
+Temp +06
+== Station ID: DRT
+Altitude Weather for 12000 feet
+Dir 080 degrees
+Spped 14
+Temp +09
+== Station ID: DSM
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 34
+Temp +01
+== Station ID: ECK
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 37
+Temp +00
+== Station ID: EKN
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 41
+Temp +04
+== Station ID: ELP
+Altitude Weather for 12000 feet
+Dir 360 degrees
+Spped 09
+Temp +12
+== Station ID: ELY
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 08
+Temp +12
+== Station ID: EMI
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 30
+Temp +03
+== Station ID: EVV
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 13
+Temp +05
+== Station ID: EYW
+Altitude Weather for 12000 feet
+Dir 090 degrees
+Spped 07
+Temp +07
+== Station ID: FAT
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 09
+Temp +10
+== Station ID: GPI
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 24
+Temp +02
+== Station ID: FLO
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 25
+Temp +06
+== Station ID: FMN
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +12
+== Station ID: FOT
+Altitude Weather for 12000 feet
+Dir 210 degrees
+Spped 12
+Temp +08
+== Station ID: FSD
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 43
+Temp +00
+== Station ID: FSM
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 22
+Temp +06
+== Station ID: FWA
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 37
+Temp +02
+== Station ID: GAG
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 05
+Temp +09
+== Station ID: GCK
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 14
+Temp +11
+== Station ID: GEG
+Altitude Weather for 12000 feet
+Dir 250 degrees
+Spped 17
+Temp +03
+== Station ID: GFK
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 39
+Temp -03
+== Station ID: GGW
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 29
+Temp -01
+== Station ID: GJT
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 11
+Temp +11
+== Station ID: GLD
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 21
+Temp +09
+== Station ID: GRB
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 46
+Temp -02
+== Station ID: GRI
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 35
+Temp +04
+== Station ID: GSP
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 11
+Temp +05
+== Station ID: GTF
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 24
+Temp +03
+== Station ID: H51
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +07
+== Station ID: H52
+Altitude Weather for 12000 feet
+Dir 210 degrees
+Spped 07
+Temp +07
+== Station ID: H61
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +06
+== Station ID: HAT
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 23
+Temp +05
+== Station ID: HOU
+Altitude Weather for 12000 feet
+Dir 050 degrees
+Spped 18
+Temp +07
+== Station ID: HSV
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 15
+Temp +06
+== Station ID: ICT
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 15
+Temp +08
+== Station ID: ILM
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 23
+Temp +05
+== Station ID: IMB
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 23
+Temp +06
+== Station ID: IND
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 30
+Temp +03
+== Station ID: INK
+Altitude Weather for 12000 feet
+Dir 050 degrees
+Spped 11
+Temp +11
+== Station ID: INL
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 34
+Temp -04
+== Station ID: JAN
+Altitude Weather for 12000 feet
+Dir 360 degrees
+Spped 12
+Temp +07
+== Station ID: JAX
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 17
+Temp +07
+== Station ID: JFK
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 30
+Temp +02
+== Station ID: JOT
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 37
+Temp +01
+== Station ID: LAS
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 07
+Temp +11
+== Station ID: LBB
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +10
+== Station ID: LCH
+Altitude Weather for 12000 feet
+Dir 080 degrees
+Spped 13
+Temp +07
+== Station ID: LIT
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 24
+Temp +06
+== Station ID: LKV
+Altitude Weather for 12000 feet
+Dir 230 degrees
+Spped 19
+Temp +08
+== Station ID: LND
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 13
+Temp +08
+== Station ID: LOU
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 22
+Temp +05
+== Station ID: LRD
+Altitude Weather for 12000 feet
+Dir 060 degrees
+Spped 12
+Temp +08
+== Station ID: LSE
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 52
+Temp -01
+== Station ID: LWS
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 24
+Temp +05
+== Station ID: MBW
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 19
+Temp +07
+== Station ID: MCW
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 39
+Temp +01
+== Station ID: MEM
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 19
+Temp +06
+== Station ID: MGM
+Altitude Weather for 12000 feet
+Dir 240 degrees
+Spped 05
+Temp +07
+== Station ID: MIA
+Altitude Weather for 12000 feet
+Dir 090 degrees
+Spped 07
+Temp +06
+== Station ID: MKC
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 28
+Temp +04
+== Station ID: MKG
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 48
+Temp +00
+== Station ID: MLB
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 08
+Temp +06
+== Station ID: MLS
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 24
+Temp +00
+== Station ID: MOB
+Altitude Weather for 12000 feet
+Dir 130 degrees
+Spped 11
+Temp +06
+== Station ID: MOT
+Altitude Weather for 12000 feet
+Dir 340 degrees
+Spped 31
+Temp -03
+== Station ID: MQT
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 33
+Temp -05
+== Station ID: MRF
+Altitude Weather for 12000 feet
+Dir 050 degrees
+Spped 08
+Temp +10
+== Station ID: MSP
+Altitude Weather for 12000 feet
+Dir 300 degrees
+Spped 35
+Temp -01
+== Station ID: MSY
+Altitude Weather for 12000 feet
+Dir 120 degrees
+Spped 05
+Temp +06
+== Station ID: OKC
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 12
+Temp +08
+== Station ID: OMA
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 31
+Temp +03
+== Station ID: ONL
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 36
+Temp +01
+== Station ID: ONT
+Altitude Weather for 12000 feet
+Dir 160 degrees
+Spped 10
+Temp +10
+== Station ID: ORF
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 29
+Temp +05
+== Station ID: OTH
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 20
+Temp +04
+== Station ID: PDX
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 14
+Temp +03
+== Station ID: PFN
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 06
+Temp +07
+== Station ID: PHX
+Altitude Weather for 12000 feet
+Dir 050 degrees
+Spped 10
+Temp +11
+== Station ID: PIE
+Altitude Weather for 12000 feet
+Dir 240 degrees
+Spped 07
+Temp +06
+== Station ID: PIH
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 15
+Temp +08
+== Station ID: PIR
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 54
+Temp -01
+== Station ID: PLB
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 30
+Temp -01
+== Station ID: PRC
+Altitude Weather for 12000 feet
+Dir 020 degrees
+Spped 11
+Temp +12
+== Station ID: PSB
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 28
+Temp +02
+== Station ID: PSX
+Altitude Weather for 12000 feet
+Dir 050 degrees
+Spped 15
+Temp +07
+== Station ID: PUB
+Altitude Weather for 12000 feet
+Dir 320 degrees
+Spped 11
+Temp +10
+== Station ID: PWM
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 18
+Temp +00
+== Station ID: RAP
+Altitude Weather for 12000 feet
+Dir 310 degrees
+Spped 32
+Temp +02
+== Station ID: RBL
+Altitude Weather for 12000 feet
+Dir 230 degrees
+Spped 07
+Temp +09
+== Station ID: RDM
+Altitude Weather for 12000 feet
+Dir 220 degrees
+Spped 23
+Temp +05
+== Station ID: RDU
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 23
+Temp +05
+== Station ID: RIC
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 28
+Temp +04
+== Station ID: RKS
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 16
+Temp +08
+== Station ID: RNO
+Altitude Weather for 12000 feet
+Dir 200 degrees
+Spped 16
+Temp +10
+== Station ID: ROA
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 26
+Temp +05
+== Station ID: ROW
+Altitude Weather for 12000 feet
+Dir 340 degrees
+Spped 13
+Temp +12
+== Station ID: SAC
+Altitude Weather for 12000 feet
+Dir 190 degrees
+Spped 05
+Temp +09
+== Station ID: SAN
+Altitude Weather for 12000 feet
+Dir 090 degrees
+Spped 08
+Temp +09
+== Station ID: SAT
+Altitude Weather for 12000 feet
+Dir 040 degrees
+Spped 15
+Temp +08
+== Station ID: SAV
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 09
+Temp +07
+== Station ID: SBA
+Altitude Weather for 12000 feet
+Dir 110 degrees
+Spped 06
+Temp +09
+== Station ID: SEA
+Altitude Weather for 12000 feet
+Dir 240 degrees
+Spped 11
+Temp +02
+== Station ID: SFO
+Altitude Weather for 12000 feet
+Dir 170 degrees
+Spped 08
+Temp +10
+== Station ID: SGF
+Altitude Weather for 12000 feet
+Dir 290 degrees
+Spped 25
+Temp +06
+== Station ID: SHV
+Altitude Weather for 12000 feet
+Dir 010 degrees
+Spped 05
+Temp +08
+== Station ID: SIY
+Altitude Weather for 12000 feet
+Dir 230 degrees
+Spped 15
+Temp +08
+== Station ID: SLC
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 12
+Temp +11
+== Station ID: SLN
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 24
+Temp +06
+== Station ID: SPI
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 24
+Temp +03
+== Station ID: SPS
+Altitude Weather for 12000 feet
+Dir 280 degrees
+Spped 05
+Temp +09
+== Station ID: SSM
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 31
+Temp -03
+== Station ID: STL
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 20
+Temp +04
+== Station ID: SYR
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 29
+Temp +02
+== Station ID: T01
+Altitude Weather for 12000 feet
+Dir 190 degrees
+Spped 06
+Temp +06
+== Station ID: T06
+Altitude Weather for 12000 feet
+Dir 990 degrees
+Spped 00
+Temp +06
+== Station ID: T07
+Altitude Weather for 12000 feet
+Dir 250 degrees
+Spped 10
+Temp +07
+== Station ID: TCC
+Altitude Weather for 12000 feet
+Dir 350 degrees
+Spped 08
+Temp +11
+== Station ID: TLH
+Altitude Weather for 12000 feet
+Dir 240 degrees
+Spped 08
+Temp +06
+== Station ID: TRI
+Altitude Weather for 12000 feet
+Dir 330 degrees
+Spped 20
+Temp +06
+== Station ID: TUL
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 19
+Temp +07
+== Station ID: TUS
+Altitude Weather for 12000 feet
+Dir 040 degrees
+Spped 06
+Temp +10
+== Station ID: TVC
+Altitude Weather for 12000 feet
+Dir 270 degrees
+Spped 42
+Temp -02
+== Station ID: TYS
+Altitude Weather for 12000 feet
+Dir 350 degrees
+Spped 12
+Temp +06
+== Station ID: WJF
+Altitude Weather for 12000 feet
+Dir 160 degrees
+Spped 07
+Temp +10
+== Station ID: YKM
+Altitude Weather for 12000 feet
+Dir 240 degrees
+Spped 17
+Temp +04
+== Station ID: ZUN
+Altitude Weather for 12000 feet
+Dir 070 degrees
+Spped 10
+Temp +12
+== Station ID: 2XG
+Altitude Weather for 12000 feet
+Dir 260 degrees
+Spped 12
+Temp +07
+== Station ID: 4J3
+Altitude Weather for 12000 feet
+Dir 210 degrees
+Spped 08
+Temp +07

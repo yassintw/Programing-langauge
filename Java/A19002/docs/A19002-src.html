@@ -1,0 +1,118 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>        <a name="line.1"></a>
+<FONT color="green">002</FONT>       import java.util.*;  <a name="line.2"></a>
+<FONT color="green">003</FONT>        <a name="line.3"></a>
+<FONT color="green">004</FONT>        /** <a name="line.4"></a>
+<FONT color="green">005</FONT>        &lt;h2&gt;Calculate Ramp Weight&lt;/h2&gt;<a name="line.5"></a>
+<FONT color="green">006</FONT>        This program that prompts for the aircraft empty weight, number of passengers in the front seat, number of passengers in the back seat, the amount of fuel in the airplane and the baggage weight to calculate the "Ramp Weight" of the aircraft. <a name="line.6"></a>
+<FONT color="green">007</FONT>         <a name="line.7"></a>
+<FONT color="green">008</FONT>        @author Yassin Yazal (Email: &lt;a href="mailto:yassintw@gmail.com"&gt; yassintw@gmail.com&lt;/a&gt;)<a name="line.8"></a>
+<FONT color="green">009</FONT>        @version 1.11 01/20/2010<a name="line.9"></a>
+<FONT color="green">010</FONT>        @assignment.number Using Javadoc - A19002 - Chapter 2<a name="line.10"></a>
+<FONT color="green">011</FONT>        @prgm.usage Called from the operating system<a name="line.11"></a>
+<FONT color="green">012</FONT>        @see "Gaddis, 2009, Starting out with Java, Early Objects, 3rd Ed."<a name="line.12"></a>
+<FONT color="green">013</FONT>        @see &lt;a href="http://java.sun.com/javase/6/docs/technotes/guides/javadoc/index.html"&gt;JavaDoc Documentation&lt;/a&gt;<a name="line.13"></a>
+<FONT color="green">014</FONT>        */<a name="line.14"></a>
+<FONT color="green">015</FONT>       public class A19002 <a name="line.15"></a>
+<FONT color="green">016</FONT>       {<a name="line.16"></a>
+<FONT color="green">017</FONT>           <a name="line.17"></a>
+<FONT color="green">018</FONT>           /** <a name="line.18"></a>
+<FONT color="green">019</FONT>           This class use Scanner console method to enable user put value to caculate the aircraft ramp weight.       <a name="line.19"></a>
+<FONT color="green">020</FONT>                &lt;br&gt;<a name="line.20"></a>
+<FONT color="green">021</FONT>                The formula is:<a name="line.21"></a>
+<FONT color="green">022</FONT>           &lt;pre&gt;<a name="line.22"></a>
+<FONT color="green">023</FONT>           RW = BW + GF*6 + (FS+BS+1)* 170 + EW<a name="line.23"></a>
+<FONT color="green">024</FONT>                &lt;/pre&gt;<a name="line.24"></a>
+<FONT color="green">025</FONT>           */<a name="line.25"></a>
+<FONT color="green">026</FONT>          public static void main(String[] args)<a name="line.26"></a>
+<FONT color="green">027</FONT>          {<a name="line.27"></a>
+<FONT color="green">028</FONT>             System.out.println("Black Mountain Aviation Center");<a name="line.28"></a>
+<FONT color="green">029</FONT>             System.out.println("programmed by Yassin Yazal");<a name="line.29"></a>
+<FONT color="green">030</FONT>             System.out.println(" ");<a name="line.30"></a>
+<FONT color="green">031</FONT>                 /** Use to show the programmer and other information */<a name="line.31"></a>
+<FONT color="green">032</FONT>             Scanner console = new Scanner(System.in);<a name="line.32"></a>
+<FONT color="green">033</FONT>                 /** Used to constructed the Scanner so you can ask it to return a value of a particular type */<a name="line.33"></a>
+<FONT color="green">034</FONT>             System.out.println("Enter the Aircraft Empty Weight");<a name="line.34"></a>
+<FONT color="green">035</FONT>             int EW  = console.nextInt(); /** Used read and return an int value back to int EW */<a name="line.35"></a>
+<FONT color="green">036</FONT>             System.out.println("Enter the Number of Passengers in the Front Seat");<a name="line.36"></a>
+<FONT color="green">037</FONT>             int FS  = console.nextInt(); /** Used read and return an int value back to int FS */<a name="line.37"></a>
+<FONT color="green">038</FONT>             System.out.println("Enter the Number of Passengers in the Back Seat");<a name="line.38"></a>
+<FONT color="green">039</FONT>             int BS  = console.nextInt(); /** Used read and return an int value back to int BS */<a name="line.39"></a>
+<FONT color="green">040</FONT>             System.out.println("Enter the Number of Gallons of Fuel");<a name="line.40"></a>
+<FONT color="green">041</FONT>             int GOF  = console.nextInt(); /** Used read and return an int value back to int GOF */<a name="line.41"></a>
+<FONT color="green">042</FONT>             System.out.println("Enter the Baggage Weight" );<a name="line.42"></a>
+<FONT color="green">043</FONT>             int BW  = console.nextInt(); /** Used read and return an int value back to int BW */<a name="line.43"></a>
+<FONT color="green">044</FONT>             int NGF = 6 * GOF; /** Use formula to return a new int NGF  */<a name="line.44"></a>
+<FONT color="green">045</FONT>             int RW = BW + NGF + (FS+BS+1)* 170 + EW; /** Formula use to caculate int RW */<a name="line.45"></a>
+<FONT color="green">046</FONT>             System.out.println("The Ramp Weight of the Aircraft is " + (int)RW + " pounds.");<a name="line.46"></a>
+<FONT color="green">047</FONT>                 /** Combine the final int RW and words */<a name="line.47"></a>
+<FONT color="green">048</FONT>          <a name="line.48"></a>
+<FONT color="green">049</FONT>          <a name="line.49"></a>
+<FONT color="green">050</FONT>               <a name="line.50"></a>
+<FONT color="green">051</FONT>          }<a name="line.51"></a>
+<FONT color="green">052</FONT>       }<a name="line.52"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>
