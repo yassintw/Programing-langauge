@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1413126537 source:c:\users\yam\desktop\monstertoward\monstertower\character.cpp
+	<iostream>
+	<string>
+	"Character.h"
+
+1413126659 c:\users\yam\desktop\monstertoward\monstertower\character.h
+
+1413127956 source:c:\users\yam\desktop\monstertoward\monstertower\dragon1.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"dragon1.h"
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	"Character.h"
+
+1413033855 c:\users\yam\desktop\monstertoward\monstertower\dragon1.h
+
+1413497404 source:c:\users\yam\desktop\monstertoward\monstertower\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen.h"
+	"screen2.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctime>
+	"Character.h"
+
+1413033855 c:\users\yam\desktop\monstertoward\monstertower\screen.h
+
+1413033855 c:\users\yam\desktop\monstertoward\monstertower\screen2.h
+
+1413127956 source:c:\users\yam\desktop\monstertoward\monstertower\screen.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen.h"
+
+1413035125 source:c:\users\yam\desktop\monstertoward\monstertower\screen2.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen2.h"
+	"dragon1.h"
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	"Character.h"
+
+1414984265 source:f:\users\yam\desktop\monstertoward\monstertower\character.cpp
+	<iostream>
+	<string>
+	"Character.h"
+
+1414984379 f:\users\yam\desktop\monstertoward\monstertower\character.h
+
+1415139317 source:f:\users\yam\desktop\monstertoward\monstertower\dragon1.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"dragon1.h"
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	"Character.h"
+
+1413026655 f:\users\yam\desktop\monstertoward\monstertower\dragon1.h
+
+1413120756 source:f:\users\yam\desktop\monstertoward\monstertower\screen.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen.h"
+
+1413026655 f:\users\yam\desktop\monstertoward\monstertower\screen.h
+
+1413027925 source:f:\users\yam\desktop\monstertoward\monstertower\screen2.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen2.h"
+	"dragon1.h"
+	<ctime>
+	<stdio.h>
+	<stdlib.h>
+	"Character.h"
+
+1413026655 f:\users\yam\desktop\monstertoward\monstertower\screen2.h
+
+1415139317 source:f:\users\yam\desktop\monstertoward\monstertower\main.cpp
+	<iostream>
+	<fstream>
+	<windows.h>
+	<string>
+	"screen.h"
+	"screen2.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctime>
+	"Character.h"
+
