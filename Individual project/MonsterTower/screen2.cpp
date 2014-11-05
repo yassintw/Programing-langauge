@@ -100,61 +100,6 @@ void screen2()
     std::string Art9 = getFileContents (Reader8);       //Get file
 
     std::cout << Art9 << std::endl;
- Sleep(100);
-    system("cls");
-      std::ifstream Reader9 ("egg9.txt");             //Open file
-
-    std::string Art10 = getFileContents (Reader9);       //Get file
-
-    std::cout << Art10 << std::endl;
-Sleep(100);
-    system("cls");
-      std::ifstream Reader10 ("egg10.txt");             //Open file
-
-    std::string Art11 = getFileContents (Reader10);       //Get file
-
-    std::cout << Art11 << std::endl;
-   Sleep(100);
-    system("cls");
-      std::ifstream Reader11 ("egg11.txt");             //Open file
-
-    std::string Art12 = getFileContents (Reader11);       //Get file
-
-    std::cout << Art12 << std::endl;
-
-    Sleep(100);
-    system("cls");
-      std::ifstream Reader12 ("egg12.txt");             //Open file
-
-    std::string Art13 = getFileContents (Reader12);       //Get file
-
-    std::cout << Art13 << std::endl;
-   Sleep(100);
-    system("cls");
-      std::ifstream Reader13 ("egg13.txt");             //Open file
-
-    std::string Art14 = getFileContents (Reader13);       //Get file
-
-    std::cout << Art14 << std::endl;
-  Sleep(100);
-    system("cls");
-      std::ifstream Reader14 ("egg14.txt");             //Open file
-
-    std::string Art15 = getFileContents (Reader14);       //Get file
-
-    std::cout << Art15 << std::endl;
-   Sleep(100);
-    system("cls");
-      std::ifstream Reader15 ("egg15.txt");             //Open file
-
-    std::string Art16 = getFileContents (Reader15);       //Get file
-
-    std::cout << Art16 << std::endl;
-   Sleep(100);
-    system("cls");
-
-
-
 
 
 }

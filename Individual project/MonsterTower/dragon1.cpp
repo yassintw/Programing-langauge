@@ -17,7 +17,7 @@ character dragon1()
 
 
 
-    std::ifstream Reader ("you.txt");             //Open file
+    std::ifstream Reader ("youu.txt");             //Open file
 
     std::string Art1 = getFileContents (Reader);       //Get file
 
@@ -40,7 +40,7 @@ std::cout << Art1 << std::endl;
     system("COLOR 0C");
     SetConsoleTextAttribute(hConsole, 3);
     cout<<"WOW you got red monster"<<endl;
-       return character ("red dragon", 50, 20, 12, .65, 100, 1,0,0);
+       return character ("red monster", 50, 20, 12, .65, 100, 1,0,0);
        break;
     case 2:     // Armory
 
@@ -50,7 +50,7 @@ std::cout << Art1 << std::endl;
     system("COLOR 0D");
     SetConsoleTextAttribute(hConsole, 3);
     cout<<"WOW you got pink monster"<<endl;
-    return character ("pink dragon", 50, 12, 20, .65, 100, 1,0,0);
+    return character ("pink monster", 50, 12, 20, .65, 100, 1,0,0);
        break;
     case 3:     // Armory
 
@@ -59,7 +59,7 @@ std::cout << Art1 << std::endl;
     system("COLOR 0E");
     SetConsoleTextAttribute(hConsole, 3);
     cout<<"WOW you got yellow monster"<<endl;
-    return character ("yellow dragon", 100, 12, 12, .65, 100, 1,0,0);
+    return character ("yellow monster", 100, 12, 12, .65, 100, 1,0,0);
        break;
             }
 }

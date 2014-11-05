@@ -151,7 +151,7 @@ int main()
         {
 
 
-        std::ifstream Reader1 ("work.txt");             //Open file
+        std::ifstream Reader1 ("works.txt");             //Open file
         std::string Art2 = getFileContents (Reader1);
         std::cout << Art2 << std::endl;
         system("COLOR 0C");
@@ -257,6 +257,11 @@ int main()
         int yourchoice;
                 if(ourHero.getLevel()<5)
                 {
+                    std::ifstream Reader1 ("door.txt");             //Open file
+        std::string Art2 = getFileContents (Reader1);
+        std::cout << Art2 << std::endl;
+        system("COLOR 0A");
+        SetConsoleTextAttribute(hConsole, 3);
                     cout << "You walk into a tower full with monsters\n\n\n[1] Open the Door\n\n[2] Run away\n\n";
                     cin >> yourchoice;
                 }
@@ -276,20 +281,26 @@ int main()
                             std::ifstream Reader1 ("babygobolin.txt");             //Open file
                             std::string Art2 = getFileContents (Reader1);
                             std::cout << Art2 << std::endl;
-                            system("COLOR 0C");
+                            system("COLOR 0A");
                             SetConsoleTextAttribute(hConsole, 3);
 
                             cout << "You find out a baby goblin.\n";
                             character babygoblin("babygoblin", 25, 15, 12, 1, 0, 0,0,0);
+                            cin.ignore();
+                            cin.get();
+                            system("cls");
+
                             while(babygoblin.getHealth()>0)
                             {
-                                  std::ifstream Reader1 ("yourchoice.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
+                            std::ifstream Reader1 ("youraction.txt");             //Open file
+                            std::string Art2 = getFileContents (Reader1);
+                            std::cout << Art2 << std::endl;
+                            system("COLOR 0C");
+                            SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
+                                cin.ignore();
+                                cin.get();
                                 system("cls");
                                 switch(fightchoice)
                                 {
@@ -301,36 +312,47 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=babygoblin.getHealth()-theHit;
                                             babygoblin.setHealth(currentHealth);
-                                            std::ifstream Reader1 ("youa.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
+                                            std::ifstream Reader1 ("youua.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
+
 
                                             cout << "You hit the baby goblin for " << theHit << " health!\n\n"<<"Baby goblin health:"<<babygoblin.getHealth();
-
+                                                 cin.ignore();
+                                                    cin.get();
+                                                    system("cls");
                                             if(1 > babygoblin.getHealth())
                                             {
-                                                std::ifstream Reader1 ("babygobolin.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
+                                                std::ifstream Reader1 ("babygobolinr.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
+
                                                 cout << "Baby goblin cry and run away... \nYou receive 20 gold and 55 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+20;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +55;
                                                 babygoblin.setHealth(0);
+                                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
                                             }
                                         }
                                         else
                                         {
                                             std::ifstream Reader1 ("babygobolindodge.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0A");
+                                            SetConsoleTextAttribute(hConsole, 3);
+
                                             cout << "The baby goblin has dodged your attack!\n\n";
+                                                    cin.ignore();
+                                            cin.get();
+                                            system("cls");
                                         }
                                         if(babygoblin.getHealth()>0)
                                         {
@@ -341,21 +363,24 @@ int main()
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
                                                 std::ifstream Reader1 ("babygobolina.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
-                                                cout << "The baby goblin has hit you for " << theHit << " health!\n\n"<<"You current health:"<<ourHero.getHealth();
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
 
+                                                cout << "The baby goblin has hit you for " << theHit << " health!\n\n"<<"You current health:"<<ourHero.getHealth();
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
 
                                             }
                                             else
                                             {
-                                                std::ifstream Reader1 ("youd.txt");             //Open file
-        std::string Art2 = getFileContents (Reader1);
-        std::cout << Art2 << std::endl;
-        system("COLOR 0C");
-        SetConsoleTextAttribute(hConsole, 3);
+                                                std::ifstream Reader1 ("youud.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Wow you dodged the baby goblin's attack!";
                                             }
                                         }
@@ -368,6 +393,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                            std::ifstream Reader1 ("funnyface.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You make a funny face to baby goblin, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -378,6 +408,18 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("funnyface.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
+cin.ignore();
+                                            cin.get();
+                                            std::ifstream Reader2 ("babygobolina.txt");             //Open file
+                                            std::string Art3 = getFileContents (Reader2);
+                                            std::cout << Art3 << std::endl;
+                                            system("COLOR 0A");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You try to make funny face but you fail. The baby goblin attack you!";
                                             theHit=babygoblin.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -394,6 +436,11 @@ int main()
                                     }
                                     default:
                                     {
+                                        std::ifstream Reader1 ("is.txt");             //Open file
+                                        std::string Art2 = getFileContents (Reader1);
+                                        std::cout << Art2 << std::endl;
+                                        system("COLOR 0C");
+                                        SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -408,13 +455,27 @@ int main()
                             if (rand()%2 +1==2)
                                 {
 
-
+                            std::ifstream Reader1 ("babywolf.txt");             //Open file
+                            std::string Art2 = getFileContents (Reader1);
+                            std::cout << Art2 << std::endl;
+                            system("COLOR 0C");
+                            SetConsoleTextAttribute(hConsole, 3);
                             cout << "You find out a baby wolf.\n";
                             character babywolf("baby wolf", 28, 12, 15, 1, 0, 0,0,0);
+                            cin.ignore();
+                            cin.get();
+                            system("cls");
                             while(babywolf.getHealth()>0)
                             {
+                                std::ifstream Reader1 ("youraction.txt");             //Open file
+                                std::string Art2 = getFileContents (Reader1);
+                                std::cout << Art2 << std::endl;
+                                system("COLOR 0C");
+                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
+                                cin.ignore();
+                                cin.get();
                                 system("cls");
                                 switch(fightchoice)
                                 {
@@ -425,10 +486,22 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=babywolf.getHealth()-theHit;
                                             babywolf.setHealth(currentHealth);
+                                            std::ifstream Reader1 ("youua.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the baby wolf for " << theHit << " health!\n\n"<<"Baby wolf health: "<<babywolf.getHealth();
-
+                                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
                                             if(1 > babywolf.getHealth())
                                             {
+                                                std::ifstream Reader1 ("babywolfr.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Baby wolf cry and run away... You receive 20 gold and 50 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+20;
                                                 ourHero.setGold(newGold);
@@ -438,7 +511,15 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("babywolfd.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "The baby wolf has dodged your attack!\n\n";
+                                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
                                         }
                                         if(babywolf.getHealth()>0)
                                         {
@@ -448,13 +529,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                std::ifstream Reader1 ("babywolfa.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The baby wolf has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
 
                                             }
                                             else
                                             {
+                                                std::ifstream Reader1 ("youud.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nWow you dodged the baby wolf's attack!";
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -466,6 +562,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                            std::ifstream Reader1 ("funnyface.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You make a funny face to baby wolf, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -476,6 +577,19 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("funnyface.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
+                                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
+                                            std::ifstream Reader2 ("babywolfa.txt");             //Open file
+                                            std::string Art3 = getFileContents (Reader2);
+                                            std::cout << Art3 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You try to make funny face but you fail. The baby wolf attack you!";
                                             theHit=babywolf.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -492,6 +606,11 @@ int main()
                                     }
                                     default:
                                     {
+                                        std::ifstream Reader1 ("is.txt");             //Open file
+                                        std::string Art2 = getFileContents (Reader1);
+                                        std::cout << Art2 << std::endl;
+                                        system("COLOR 0C");
+                                        SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -524,15 +643,26 @@ int main()
                         std::ifstream Reader1 ("gobolindad.txt");             //Open file
                         std::string Art2 = getFileContents (Reader1);
                         std::cout << Art2 << std::endl;
-                        system("COLOR 0C");
+                        system("COLOR 0A");
                         SetConsoleTextAttribute(hConsole, 3);
                             cout << "You find out a goblin's dad.\n";
                             character goblindad("goblin dad", 56, 14, 18, 4, 0, 0,0,0);
+                               cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(goblindad.getHealth()>0)
                             {
+                                std::ifstream Reader1 ("youraction.txt");             //Open file
+                                std::string Art2 = getFileContents (Reader1);
+                                std::cout << Art2 << std::endl;
+                                system("COLOR 0C");
+                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                   cin.ignore();
+                                        cin.get();
+                                        system("cls");
+
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -542,30 +672,43 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=goblindad.getHealth()-theHit;
                                             goblindad.setHealth(currentHealth);
+                                            std::ifstream Reader1 ("youa.txt");             //Open file
+                                            std::string Art2 = getFileContents (Reader1);
+                                            std::cout << Art2 << std::endl;
+                                            system("COLOR 0C");
+                                            SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the goblin's dad for " << theHit << " health!\n\n"<<"Goblin's dad health: "<<goblindad.getHealth();
-
+                                               cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > goblindad.getHealth())
                                             {
-                                                std::ifstream Reader1 ("gobolindad.txt");             //Open file
+                                                std::ifstream Reader1 ("gobolindadj.txt");             //Open file
                                                std::string Art2 = getFileContents (Reader1);
                                                std::cout << Art2 << std::endl;
-                                                system("COLOR 0C");
+                                                system("COLOR 0A");
                                                 SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Goblin dad: You so strong...can I work for you?\n You: Yea sure!! \n\nGoblin's dad has join your company as a noob worker\n\n You receive 50 gold and 100 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+50;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +100;
                                                 goblindad.setHealth(0);
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
                                             }
                                         }
                                         else
                                         {
-                                                std::ifstream Reader1 ("gobolindad.txt");             //Open file
-                                               std::string Art2 = getFileContents (Reader1);
-                                               std::cout << Art2 << std::endl;
-                                                system("COLOR 0C");
+                                                std::ifstream Reader1 ("gobolindaddodge.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
                                                 SetConsoleTextAttribute(hConsole, 3);
-                                            cout << "The Goblin's dad has dodged your attack!\n\n";
+                                                cout << "The Goblin's dad has dodged your attack!\n\n";
+                                                cin.ignore();
+                                                cin.get();
+                                        system("cls");
                                         }
                                         if(goblindad.getHealth()>0)
                                         {
@@ -575,20 +718,22 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
-                                                std::ifstream Reader1 ("gobolindad.txt");             //Open file
+                                                std::ifstream Reader1 ("gobolindada.txt");             //Open file
                                                std::string Art2 = getFileContents (Reader1);
                                                std::cout << Art2 << std::endl;
-                                                system("COLOR 0C");
+                                                system("COLOR 0A");
                                                 SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The Goblin's dad has hit you for " << theHit << "health!\n\n"<<" You current health: "<<ourHero.getHealth();
-
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
 
                                             }
                                             else
                                             {
-                                                std::ifstream Reader1 ("dodge.txt");             //Open file
-                                               std::string Art2 = getFileContents (Reader1);
-                                               std::cout << Art2 << std::endl;
+                                                std::ifstream Reader1 ("youd.txt");             //Open file
+                                                std::string Art2 = getFileContents (Reader1);
+                                                std::cout << Art2 << std::endl;
                                                 system("COLOR 0C");
                                                 SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nWow you dodged the Goblin's dad attack!";
@@ -603,10 +748,10 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
-                                            std::ifstream Reader1 ("gobolindad.txt");             //Open file
+                                            std::ifstream Reader1 ("shoes.txt");             //Open file
                                                std::string Art2 = getFileContents (Reader1);
                                                std::cout << Art2 << std::endl;
-                                                system("COLOR 0C");
+                                                system("COLOR 0A");
                                                 SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You help clean Goblin dad's shoes, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
@@ -618,11 +763,19 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader2 ("shoes.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cin.ignore();
+                                            cin.get();
                                             std::ifstream Reader1 ("gobolindad.txt");             //Open file
                                                std::string Art2 = getFileContents (Reader1);
                                                std::cout << Art2 << std::endl;
-                                                system("COLOR 0C");
+                                                system("COLOR 0A");
                                                 SetConsoleTextAttribute(hConsole, 3);
+
                                             cout << "You try to clean Goblin dad's shoes but you fail. The Goblin dad attack you!";
                                             theHit=goblindad.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -638,7 +791,7 @@ int main()
                                     }
                                     default:
                                     {
-                                        std::ifstream Reader1 ("nomoney.txt");             //Open file
+                                        std::ifstream Reader1 ("is.txt");             //Open file
                                                std::string Art2 = getFileContents (Reader1);
                                                std::cout << Art2 << std::endl;
                                                 system("COLOR 0C");
@@ -655,15 +808,29 @@ int main()
                         }
                          if (rand()%2 +1==2)
                                 {
-
+                                                std::ifstream Reader1 ("troll.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
 
                             cout << "You find out a troll.\n";
                             character troll("troll", 65, 18, 14, 3, 0, 0,0,0);
+                             cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(troll.getHealth()>0)
                             {
+                                std::ifstream Reader1 ("youraction.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Troll\n\n[2]Run\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -673,20 +840,43 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=troll.getHealth()-theHit;
                                             troll.setHealth(currentHealth);
+                                            std::ifstream Reader1 ("youa.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the troll for " << theHit << " health!\n\n"<<"Troll health: "<<troll.getHealth();
-
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > troll.getHealth())
                                             {
+                                                std::ifstream Reader1 ("trollj.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nTroll : I'm just trollllllling may join your team? You: No but you can work for me! \n\n Troll has join the company as a noob worker \n\nYou receive 60 gold and 110 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+60;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +110;
                                                 troll.setHealth(0);
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("trolldodge.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "The troll has dodged your attack!\n\n";
+                                            cin.ignore();
+                                            cin.get();
+                                        system("cls");
                                         }
                                         if(troll.getHealth()>0)
                                         {
@@ -696,13 +886,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                std::ifstream Reader1 ("trolla.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The troll has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
 
                                             }
                                             else
                                             {
+                                                std::ifstream Reader1 ("youd.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nWow you dodged the troll's attack!";
+                                                cin.ignore();
+                                            cin.get();
+                                            system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -714,6 +919,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                            std::ifstream Reader1 ("trollface.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You make a troll face to Troll, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -724,6 +934,18 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("trollface.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                 cin.ignore();
+                                            cin.get();
+                                                std::ifstream Reader2 ("trolla.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0A");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You try to make troll face but you fail. The Troll attack you!";
                                              theHit=troll.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -740,6 +962,11 @@ int main()
                                     }
                                     default:
                                     {
+                                        std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -763,13 +990,27 @@ int main()
                                 if (rand()%2 +1==1)
                                 {
 
-
+                                                std::ifstream Reader1 ("ghost.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                             cout << "You find out a Ghost.\n";
                             character ghost("Ghost", 110, 30, 35, 1, 0, 0,0,0);
+                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(ghost.getHealth()>0)
                             {
+                                 std::ifstream Reader1 ("youraction.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
+                                cin.ignore();
+                                        cin.get();
                                 system("cls");
                                 switch(fightchoice)
                                 {
@@ -780,20 +1021,43 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=ghost.getHealth()-theHit;
                                             ghost.setHealth(currentHealth);
+                                             std::ifstream Reader1 ("youuua.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the Ghost for " << theHit << " health!\n\n"<<"Ghost health: "<<ghost.getHealth();
-
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > ghost.getHealth())
                                             {
+                                                std::ifstream Reader1 ("ghostj.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Ghost: You so strong...can I work for you?\n You: Yea sure!! \n\nGhost has join your company as a experience worker\n\n You receive 100 gold and 200 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+100;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +200;
                                                 ghost.setHealth(0);
+                                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         else
                                         {
+                                             std::ifstream Reader1 ("ghostdodge.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "The Ghost has dodged your attack!\n\n";
+                                             cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                         }
                                         if(ghost.getHealth()>0)
                                         {
@@ -803,13 +1067,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                 std::ifstream Reader1 ("ghosta.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The Ghost has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+                                        cin.ignore();
+                                        cin.get();
+                                        system("cls");
 
                                             }
                                             else
                                             {
+                                                 std::ifstream Reader1 ("youuud.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nWow you dodged the Ghost attack!";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -821,6 +1100,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                             std::ifstream Reader1 ("ghosthome.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You help Ghost find his home, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -831,6 +1115,18 @@ int main()
                                         }
                                         else
                                         {
+                                             std::ifstream Reader1 ("ghosthome.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cin.ignore();
+                                            cin.get();
+                                                 std::ifstream Reader2 ("ghosta.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You try to find Ghost's home but you fail. The Ghost attack you!";
                                             theHit=ghost.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -846,6 +1142,11 @@ int main()
                                     }
                                     default:
                                     {
+                                         std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -858,15 +1159,29 @@ int main()
                         }
                          if (rand()%2 +1==2)
                                 {
-
+                                                std::ifstream Reader1 ("darkknight.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
 
                             cout << "You find out a DarkKnight.\n";
                             character darknight("DarkKnight", 180, 35, 30, 1, 0, 0,0,0);
+                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(darknight.getHealth()>0)
                             {
+                                 std::ifstream Reader1 ("youraction.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -876,20 +1191,43 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=darknight.getHealth()-theHit;
                                             darknight.setHealth(currentHealth);
+                                            std::ifstream Reader1 ("youuua.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the DarkKnight for " << theHit << " health!\n\n"<<"DarkKnight health: "<<darknight.getHealth();
-
+                                        cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > darknight.getHealth())
                                             {
+                                                 std::ifstream Reader1 ("darkknightj.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "DarkKnight : Your are the strongest monster i see so far may I join your team? You: Of course DarkKnight \n\n DarkKnight has join the company as a experience worker \n\nYou receive 120 gold and 220 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+120;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +220;
                                                 darknight.setHealth(0);
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         else
                                         {
+                                             std::ifstream Reader1 ("darkknightd.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "The DarkKnight has dodged your attack!\n\n";
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                         }
                                         if(darknight.getHealth()>0)
                                         {
@@ -899,13 +1237,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                 std::ifstream Reader1 ("darkknighta.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 09");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The DarkKnight has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+cin.ignore();
+                                        cin.get();
+                                        system("cls");
 
                                             }
                                             else
                                             {
+                                                 std::ifstream Reader1 ("youuud.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "\nWow you dodged the DarkKnight's attack!";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -917,6 +1270,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                            std::ifstream Reader1 ("darkknightc.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You pretend your in his team, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -927,6 +1285,12 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("darkknightcc.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+
                                             cout << "You try to pretend as his team but you fail. The DarkKnight attack you!";
                                              theHit=darknight.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -943,6 +1307,11 @@ int main()
                                     }
                                     default:
                                     {
+                                        std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -966,14 +1335,28 @@ int main()
 
                                 {
 
-
+                                                std::ifstream Reader1 ("clone.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                             cout << "You find out a your clone.\n";
                             character clone("Clone", 300, 40, 42, 1, 0, 0,0,0);
+                             cin.ignore();
+                             cin.get();
+                             system("cls");
                             while(clone.getHealth()>0)
                             {
+                                std::ifstream Reader1 ("youraction.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -983,20 +1366,43 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=clone.getHealth()-theHit;
                                             clone.setHealth(currentHealth);
+                                            std::ifstream Reader1 ("you1a.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the your Clone for " << theHit << " health!\n\n"<<"Clone health:"<<clone.getHealth();
-
+ cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > clone.getHealth())
                                             {
+                                               std::ifstream Reader1 ("clonej.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Your Clone: You are so strong my brother...I want to join and help you.\n You: Yea sure my clone no no my brother :D!! \n\nClone has join your company as a professional worker\n\n You receive 250 gold and 450 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+250;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +450;
                                                 clone.setHealth(0);
+                                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("cloned.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "The your Clone has dodged your attack!\n\n";
+                                             cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                         }
                                         if(clone.getHealth()>0)
                                         {
@@ -1006,13 +1412,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                std::ifstream Reader1 ("clonea.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "The your Clone has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+                                                cin.ignore();
+                                                cin.get();
+                                                system("cls");
 
                                             }
                                             else
                                             {
+                                                 std::ifstream Reader1 ("you1d.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Wow you dodged the your Clone attack!";
+                                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -1024,6 +1445,11 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
+                                            std::ifstream Reader1 ("clonem.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You help your Clone find his name, and he allows you to walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
@@ -1034,6 +1460,19 @@ int main()
                                         }
                                         else
                                         {
+                                            std::ifstream Reader1 ("clonem.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cin.ignore();
+                                            cin.get();
+                                            system("cls");
+                                                std::ifstream Reader2 ("clonea.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You forgot your name as Clone's name. Your Clone attack you!";
                                             theHit=clone.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
@@ -1049,6 +1488,11 @@ int main()
                                     }
                                     default:
                                     {
+                                         std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -1078,14 +1522,28 @@ int main()
 
                                 {
 
-
+                                                std::ifstream Reader1 ("blackdragon.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                             cout << "You meet the final boss on the top of the tower\n";
                             character blackdragon("Black Dragon", 500, 45, 47, 10, 0, 0,0,0);
+                             cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(blackdragon.getHealth()>0)
                             {
+                                 std::ifstream Reader1 ("youraction.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n[2]Run\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -1095,22 +1553,89 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=blackdragon.getHealth()-theHit;
                                             blackdragon.setHealth(currentHealth);
-                                            cout << "You hit the your Black Dragon for " << theHit << " health!\n\n"<<"Black Dragon health: "<<blackdragon.getHealth();
+                                            std::ifstream Reader1 ("youuuua.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
 
+                                            cout << "You hit the your Mr. Dark for " << theHit << " health!\n\n"<<"Mr. Dark health: "<<blackdragon.getHealth();
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > blackdragon.getHealth())
                                             {
-                                                cout << "Black Dragon: You...are...so...strong...my....son...thanks for saving me from this tower.\n You: YOU ARE MY DAD??!!\nDad: Yes my son. Sorry 5 years ago this tower is the happiest place for all monsters, and we all helping each other and live with human peacefully\n";
-                                                cout << "(baby Goblin and his Dad, Baby wolf and Troll, Ghost, Dark Knight, and Your Colon all walk out stay behind Black dragon\n) Dad: One day, we all get control by a dark wizard and start attack human....We need your help to find out dark wizard and set us free again my aon..";
-                                                cout << "Black Dragon has join your company as a professional worker)\n\n You receive 500 gold and 900 experience!\n\nPlease press enter to continue...\n";
+                                                std::ifstream Reader1 ("blackdragont.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Mr. Dark: You...are...so...strong...my....son...thanks for saving me from this tower.\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                                std::ifstream Reader2 ("blackdragontt.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout <<" You: YOU ARE MY DAD??!!\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                                                       std::ifstream Reader3 ("blackdragont.txt");             //Open file
+                                               std::string Art4 = getFileContents (Reader3);
+                                               std::cout << Art4 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout <<"Dad: Yes my son. Sorry 5 years ago this tower is the happiest place for all monsters, and we all helping each other and live with human peacefully\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                                                       std::ifstream Reader4 ("blackdragonttt.txt");             //Open file
+                                               std::string Art5 = getFileContents (Reader4);
+                                               std::cout << Art5 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "(baby Goblin and his Dad, Baby wolf and Troll, Ghost, Dark Knight, and Your Colon all walk out stay behind Mr. Dark\n)";
+                                                          cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                        std::ifstream Reader5 ("blackdragontttt.txt");             //Open file
+                                               std::string Art6 = getFileContents (Reader5);
+                                               std::cout << Art6 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout <<" Dad: One day, we all get control by a dark wizard and start attack human....We need your help to find out dark wizard and set us free again my aon..";
+                                                          cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                        std::ifstream Reader6 ("blackdragonj.txt");             //Open file
+                                               std::string Art7 = getFileContents (Reader6);
+                                               std::cout << Art7 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Mr. Dark has join your company as a professional worker)\n\n You receive 500 gold and 900 experience!\n\nPlease press enter to continue...\n";
                                                 newGold = ourHero.getGold()+500;
                                                 ourHero.setGold(newGold);
                                                 experience = experience +900;
                                                 blackdragon.setHealth(0);
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         else
                                         {
-                                            cout << "Black Dragon has dodged your attack!\n\n";
+                                            std::ifstream Reader1 ("blackdragond.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                            cout << "Mr. Dark has dodged your attack!\n\n";
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                         }
                                         if(blackdragon.getHealth()>0)
                                         {
@@ -1120,13 +1645,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
-                                                cout << "Black Dragon has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+                                                std::ifstream Reader1 ("blackdragona.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Mr. Dark has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
+                                        cin.ignore();
+                                        cin.get();
+                                        system("cls");
 
                                             }
                                             else
                                             {
-                                                cout << "Wow you dodged the Black Dragon attack!";
+                                                std::ifstream Reader1 ("youuuud.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Wow you dodged the Mr. Dark attack!";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -1138,7 +1678,12 @@ int main()
                                     {
                                         if((rand()%4)<2)
                                         {
-                                            cout << "Black dragon look at you don't know why he let you walk away.\n";
+                                             std::ifstream Reader1 ("blackdragonaaa.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                            cout << "Mr. Dark look at you don't know why he let you walk away.\n";
                                             cout << "Please press enter to continue...\n";
                                             cin.ignore();
                                             cin.get();
@@ -1148,12 +1693,17 @@ int main()
                                         }
                                         else
                                         {
-                                            cout << "Black Dragon eye's turn red and start attack you!";
+                                             std::ifstream Reader1 ("blackdragonaa.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                            cout << "Mr. Dark eye's turn red and start attack you!";
                                             theHit=blackdragon.getStr()*0.50;
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
-                                                cout << "Black Dragon has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
+                                                cout << "Mr. Dark has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
                                                 cin.ignore();
                                             cin.get();
                                             system("cls");
@@ -1163,6 +1713,11 @@ int main()
                                     }
                                     default:
                                     {
+                                         std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -1192,17 +1747,67 @@ int main()
 
 
                                 {
-
+                                                std::ifstream Reader1 ("darkwizardone.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
 
                             cout << "You find a big stone door on the top of the tower, and you put 3 dragon piece on the door.....the door start opening.....\n  You saw a  dark person inside....\n";
-                            cout << "???: You finally find me young man... You: What your voice sounds familiar..?! Wait are you my boss who disappear for three months??\n Dark Wizard: Yes young man we finally meet here since you work for my company.";
+                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
+                                            std::ifstream Reader2 ("blackdragontttt.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                            cout << "???: You finally find me young man... You: What your voice sounds familiar..?!";
+                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
+
+                            std::ifstream Reader3 ("darkwizardtwo.txt");             //Open file
+                                               std::string Art4 = getFileContents (Reader3);
+                                               std::cout << Art4 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                            cout << " Wait are you my boss who disappear for three months??\n";
+                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
+
+                            std::ifstream Reader4 ("darkwizard.txt");             //Open file
+                                               std::string Art5 = getFileContents (Reader4);
+                                               std::cout << Art5 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                            cout << "Dark Wizard: Yes young man we finally meet here since you work for my company.";
+                            cin.ignore();
+                                            cin.get();
+                                            system("cls");
+                                            std::ifstream Reader5 ("darkwizardk.txt");             //Open file
+                                               std::string Art6 = getFileContents (Reader5);
+                                               std::cout << Art6 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
                             cout << "Dark Wizard: If you want to save those monster come defeat me or let me control you..Brouhaha...\n";
                             character wizard("Dark Wizard", 800, 50, 58, 1, 0, 0,0,0);
+                             cin.ignore();
+                                        cin.get();
+                                        system("cls");
                             while(wizard.getHealth()>0)
                             {
+                                  std::ifstream Reader6 ("youraction.txt");             //Open file
+                                               std::string Art7 = getFileContents (Reader6);
+                                               std::cout << Art7 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                 cout << "Which action would you like to take?\n\n[1]Attack\n\n";
                                 cin >> fightchoice;
-                                system("cls");
+                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                 switch(fightchoice)
                                 {
                                     case 1:
@@ -1212,20 +1817,93 @@ int main()
                                             theHit=ourHero.getStr();
                                              currentHealth=wizard.getHealth()-theHit;
                                             wizard.setHealth(currentHealth);
+                                              std::ifstream Reader1 ("youuuua.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "You hit the Dark Wizard for " << theHit << " health!\n\n"<<"Dark Wizard health: "<<wizard.getHealth();
-
+                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             if(1 > wizard.getHealth())
                                             {
-                                                cout << "Dark Wizard: No....you defeat me no way. You are the first one and only one....\nYou: Is time to free all the monster..(you touch the Dragon stone it has a shiny light and it capture the Dark Wizard\n";
-                                                cout << "Dark Wizard: Noooooo...so dark inside the stone\n You: Mr.$ this stone put in your store\n Mr$: Ok, young man this stone is pretty haha\n Dad: Good job my son we all free now and we can enjoy the freedom and fresh air ^V^ haha\n";
+                                                 std::ifstream Reader1 ("deadboss.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Dark Wizard: No....you defeat me no way. You are the first one and only one....\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                                std::ifstream Reader2 ("youuuu.txt");             //Open file
+                                               std::string Art3 = getFileContents (Reader2);
+                                               std::cout << Art3 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "You: Is time to free all the monster..(you touch the Dragon stone it has a shiny light and it capture the Dark Wizard\n";
+                                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                                std::ifstream Reader3 ("s.txt");             //Open file
+                                               std::string Art4 = getFileContents (Reader3);
+                                               std::cout << Art4 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "Dark Wizard: Noooooo...so dark inside the stone\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                        std::ifstream Reader4 ("ss.txt");             //Open file
+                std::string Art5 = getFileContents (Reader4);
+                std::cout << Art5 << std::endl;
+                system("COLOR 0C");
+                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << " You: Mr.$ this stone put in your store\n Mr$: Ok, young man this stone is pretty haha\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                        std::ifstream Reader5 ("blackdragonts.txt");             //Open file
+                std::string Art6 = getFileContents (Reader5);
+                std::cout << Art6 << std::endl;
+                system("COLOR 0C");
+                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << " Dad: Good job my son we all free now and we can enjoy the freedom and fresh air ^V^ haha\n";
+                                                cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                        std::ifstream Reader6 ("thankyou.txt");             //Open file
+                std::string Art7 = getFileContents (Reader6);
+                std::cout << Art7 << std::endl;
+                system("COLOR 0C");
+                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "All the other monsters: Thank you "<< name << " and you name will be remember forever and now the tower is full with happiest monster from all the world.";
-                                                cout << "\n\n =============The End===========";
+                                                                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
+                                         std::ifstream Reader8 ("theend.txt");             //Open file
+                std::string Art9 = getFileContents (Reader8);
+                std::cout << Art9 << std::endl;
+                system("COLOR 0C");
+                SetConsoleTextAttribute(hConsole, 3);
+                                                cout << "\n\n =============The End===========\n\nThank for Playing"<< name ;
+
+                                                ourHero.setHealth(0);
                                                 wizard.setHealth(0);
                                             }
                                         }
                                         else
                                         {
+                                             std::ifstream Reader1 ("darkwizarddodge.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                             cout << "Dark Wizard has dodged your attack!\n\n";
+                                            cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                         }
                                         if(wizard.getHealth()>0)
                                         {
@@ -1235,13 +1913,28 @@ int main()
                                                 theHit=theHit*ourHero.getArmor();
                                                 currentHealth=ourHero.getHealth()-theHit;
                                                 ourHero.setHealth(currentHealth);
+                                                 std::ifstream Reader1 ("darkwizarda.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0e");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Dark Wizard has hit you for " << theHit << "health!\n\n"<<"You current health: "<<ourHero.getHealth();
-
+cin.ignore();
+                                        cin.get();
+                                        system("cls");
 
                                             }
                                             else
                                             {
+                                                 std::ifstream Reader1 ("youuuud.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                                 cout << "Wow you dodged the Dark Wizard attack!";
+                                                                                 cin.ignore();
+                                        cin.get();
+                                        system("cls");
                                             }
                                         }
                                         cin.ignore();
@@ -1252,6 +1945,11 @@ int main()
 
                                     default:
                                     {
+                                         std::ifstream Reader1 ("is.txt");             //Open file
+                                               std::string Art2 = getFileContents (Reader1);
+                                               std::cout << Art2 << std::endl;
+                                                system("COLOR 0C");
+                                                SetConsoleTextAttribute(hConsole, 3);
                                         cout << "Invalid selection.\n\n";
                                         cout << "Please press enter to continue...\n";
                                         cin.ignore();
@@ -1498,7 +2196,16 @@ int main()
 
         case 4:
             {
-                if (ourHero.getClass()=="pink dragon" && ourHero.getLevel() == 1)
+                if (ourHero.getClass()=="pink monster" && ourHero.getLevel() == 1)
+
+                    {
+                    std::ifstream Reader ("youu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0D");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                if (ourHero.getClass()=="pink monster" && ourHero.getLevel() == 2)
 
                     {
                     std::ifstream Reader ("you.txt");             //Open file
@@ -1507,7 +2214,44 @@ int main()
                     system("COLOR 0D");
                     SetConsoleTextAttribute(hConsole, 3);
                     }
-                if (ourHero.getClass()=="yellow dragon" && ourHero.getLevel() == 1)
+                  if (ourHero.getClass()=="pink monster" && ourHero.getLevel() == 3)
+
+                    {
+                    std::ifstream Reader ("youuu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0D");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+
+                if (ourHero.getClass()=="pink monster" && ourHero.getLevel() == 4)
+                    {
+                    std::ifstream Reader ("you1.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0D");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                if (ourHero.getClass()=="pink monster" && ourHero.getLevel() == 5)
+
+                    {
+                    std::ifstream Reader ("youuuu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0D");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+
+                if (ourHero.getClass()=="yellow monster" && ourHero.getLevel() == 1)
+
+                    {
+                    std::ifstream Reader ("youu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0E");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                    if (ourHero.getClass()=="yellow monster" && ourHero.getLevel() == 2)
 
                     {
                     std::ifstream Reader ("you.txt");             //Open file
@@ -1516,10 +2260,73 @@ int main()
                     system("COLOR 0E");
                     SetConsoleTextAttribute(hConsole, 3);
                     }
-                if (ourHero.getClass()=="red dragon" && ourHero.getLevel() == 1)
+                    if (ourHero.getClass()=="yellow monster" && ourHero.getLevel() == 3)
+
+                    {
+                    std::ifstream Reader ("youuu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0E");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                    if (ourHero.getClass()=="yellow monster" && ourHero.getLevel() == 4)
+
+                    {
+                    std::ifstream Reader ("you1.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0E");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                    if (ourHero.getClass()=="yellow monster" && ourHero.getLevel() == 5)
+
+                    {
+                    std::ifstream Reader ("youuuu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0E");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                if (ourHero.getClass()=="red monster" && ourHero.getLevel() == 1)
+
+                    {
+                    std::ifstream Reader ("youu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0C");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                     if (ourHero.getClass()=="red monster" && ourHero.getLevel() == 2)
 
                     {
                     std::ifstream Reader ("you.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0C");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                     if (ourHero.getClass()=="red monster" && ourHero.getLevel() == 3)
+
+                    {
+                    std::ifstream Reader ("youuu.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0C");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                     if (ourHero.getClass()=="red monster" && ourHero.getLevel() == 4)
+
+                    {
+                    std::ifstream Reader ("you1.txt");             //Open file
+                    std::string Art1 = getFileContents (Reader);
+                    std::cout << Art1 << std::endl;
+                    system("COLOR 0C");
+                    SetConsoleTextAttribute(hConsole, 3);
+                    }
+                     if (ourHero.getClass()=="red monster" && ourHero.getLevel() == 5)
+
+                    {
+                    std::ifstream Reader ("youuuu.txt");             //Open file
                     std::string Art1 = getFileContents (Reader);
                     std::cout << Art1 << std::endl;
                     system("COLOR 0C");
